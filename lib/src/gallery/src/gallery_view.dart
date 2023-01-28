@@ -224,10 +224,10 @@ class _ViewState extends State<_View> with SingleTickerProviderStateMixin {
       return false;
     }
 
-    if (_controller.value.selectedEntities.isNotEmpty) {
-      _showAlert();
-      return false;
-    }
+//     if (_controller.value.selectedEntities.isNotEmpty) {
+//       _showAlert();
+//       return false;
+//     }
 
     if (_controller.fullScreenMode) {
       UIHandler.of(context).pop();
