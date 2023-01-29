@@ -11,11 +11,12 @@ class EditorOverlay extends StatelessWidget {
   const EditorOverlay({
     Key? key,
     required this.controller,
+    this.onSuccess,
   }) : super(key: key);
 
   ///
   final DrishyaEditingController controller;
-
+  final ValueSetter<DrishyaEntity>? onSuccess;
   @override
   Widget build(BuildContext context) {
     return ValueListenableBuilder<EditorValue>(
@@ -47,7 +48,7 @@ class EditorOverlay extends StatelessWidget {
             Positioned(
               right: 16,
               bottom: 16,
-              child: EditorShutterButton(controller: controller),
+              child: EditorShutterButton(controller: controller,onSuccess:onSuccess),
             ),
 
             // Sticker buttons
