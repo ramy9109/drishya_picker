@@ -216,7 +216,7 @@ class _IconButton extends StatelessWidget {
         padding: EdgeInsets.zero,
         icon: Icon(
           iconData ?? Icons.close,
-          color: Colors.lightBlue.shade300,
+         // color: Colors.lightBlue.shade300,
           size: size ?? 26.0,
         ),
         onPressed: onPressed,
@@ -269,7 +269,7 @@ class _AlbumDetail extends StatelessWidget {
 
         // Receiver name
         Text(
-          subtitle ?? 'Select',
+          subtitle,
           style: Theme.of(context)
               .textTheme
               .caption!
