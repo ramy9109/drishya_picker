@@ -269,7 +269,7 @@ class _AlbumDetail extends StatelessWidget {
 
         // Receiver name
         Text(
-          subtitle,
+          subtitle ?? "",
           style: Theme.of(context)
               .textTheme
               .caption!
