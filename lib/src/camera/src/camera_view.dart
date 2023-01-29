@@ -192,7 +192,8 @@ class _CameraViewState extends State<CameraView>
   Widget build(BuildContext context) {
     return WillPopScope(
       onWillPop: _onWillPop,
-      child: SafeArea(Scaffold(
+      child: SafeArea(
+        child: Scaffold(
         backgroundColor: Colors.black,
         body: ValueListenableBuilder<CamValue>(
           valueListenable: _camController,
